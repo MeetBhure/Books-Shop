@@ -14,6 +14,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Login } from './components/Login';
 import { Register } from './components/Register';
 import axios from "axios";
+import { useHistory } from 'react-router-dom';
 
 
 
@@ -27,6 +28,7 @@ import axios from "axios";
     const [booksLength, setBooksLength] = useState(5);
     const [booksStart, setBooksStart] = useState(0);
     const [token, setToken] = useState("");
+    const history = useHistory();
   // const [cart, setCart] = useState([]);
   
     const fetchProducts = async () => {

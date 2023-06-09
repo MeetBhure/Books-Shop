@@ -34,8 +34,8 @@ const port = process.env.PORT || 5000;
  
 app.use(bodyParser.json());
 app.use('/books', booksRoutes);
-app.use('/order', booksRoutes);
-app.use('/usersapi', orderRoutes);
+app.use('/order', orderRoutes);
+app.use('/usersapi', userRoutes);
 // app.get("/welcome", auth, (req, res) => {
 //   res.status(200).send("Welcome  ");
 // });

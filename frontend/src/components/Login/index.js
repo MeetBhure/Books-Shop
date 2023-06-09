@@ -11,7 +11,6 @@ export const Login = ({setToken}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("qqq",process.env.REACT_APP_CHEC_PUBLIC_KEY, process.env.API_ENVIROMENT)
         axios.post(`http://localhost:5000/usersapi/loginUser`, {
             "email" : email,
             "password" : pass
